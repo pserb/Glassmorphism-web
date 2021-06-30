@@ -1,11 +1,126 @@
 body, html {
   margin: 0;
-  height: 100%;
-}
-.bg {
-  background-image: url('gradient.png');
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+
+  transition: all 0.4s ease-in;
+  background-image: var(--bg-gradient);
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+:root {
+  --bg-gradient: url('gradient.png');
+}
+.darkmode {
+  --bg-gradient: url('gradient-dark.png');
+}
+.dark-mode-toggle {
+    position: relative;
+    -webkit-appearance: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(40px);
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.1);
+    font-size: 1.2em;
+    color: #fff;
+    border-radius: 30px;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+    .dark-mode-toggle:hover {
+      background: rgba(255, 255, 255, 0.4);
+    }
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 2560px;
+  flex-wrap: wrap;
+  z-index: 1;
+}
+  .container .title {
+    position: relative;
+    width: 1600px;
+    height: 400px;
+    margin: 40px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(40px);
+  }
+    .container .title .content {
+      padding: 10px;
+      padding-bottom: 40px;
+      text-align: center;
+    }
+    .container .title .content h1 {
+      font-size: 7em;
+      color: #fff;
+      font-weight: 900;
+      letter-spacing: 2px;
+      line-height: 0.4em;
+    }
+    .container .title .content p {
+      position: relative;
+      font-size: 2em;
+      color: #fff;
+      font-weight: 400;
+    }
+
+.container .body {
+  position: relative;
+  width: 1600px;
+  height: 400px;
+  margin: 40px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(40px);
+}
+  .container .body .body-content {
+    text-align: left;
+    color: #fff;
+    padding: 30px;
+  }
+    .container .body .body-content h2 {
+      position: absolute;
+      font-size: 6em;
+      top: -50px;
+      left: 50px;
+      color: rgba(255, 255, 255, 0.1);
+      filter: blur(1.6px);
+      pointer-events: none;
+      z-index: 1;
+    }
+    .container .body .body-content p {
+      position: relative;
+      text-align: left;
+      font-size: 1.6em;
+      padding-left: 18px;
+      z-index: 1;
+      max-width: 50%;
+      line-height: 40px
+    }
+    .container .body .body-content img {
+      position: absolute;
+      width: 600px;
+      top: 0px;
+      right: 0px;
+    }

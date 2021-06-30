@@ -11,6 +11,31 @@
     <title>Glassmorphism</title>
 </head>
 <body>
-  <div class='bg'>&nbsp;</div>
+  <div class="container">
+    <div class="title">
+      <div class="content">
+        <button id="dark-mode-toggle" class="dark-mode-toggle">Toggle Dark Mode</button>
+        <h1>Paul Serbanescu</h1>
+        <p>Web Designer, Programmer, Tech Enthusiast</p>
+      </div>
+    </div>
+    <div class="body">
+      <div class="body-content">
+        <h2>About</h2>
+        <p>Hello! I am a student at Stuyvesant High School in downtown NYC. I've always had an affinity towards computers and have been interested in understanding what makes them tick.</p>
+        <img src="stuy.jpeg">
+      </div>
+    </div>
+  </div>
 </body>
+<script type="text/javascript" src="js/darkModeToggle.js"></script>
+<script type="text/javascript" src="js/vanilla-tilt.js"></script>
+<script type="text/javascript">
+	VanillaTilt.init(document.querySelector(".title"), {
+		max: 1,
+		speed: 1000,
+    glare: true,
+    "max-glare": 0.2,
+	});
+</script>
 </html>
