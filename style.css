@@ -10,10 +10,10 @@ body, html {
   background-size: cover;
 }
 :root {
-  --bg-gradient: url('gradient.png');
+  --bg-gradient: url('gradient-min.png');
 }
 .darkmode {
-  --bg-gradient: url('gradient-dark.png');
+  --bg-gradient: url('gradient-dark-min.png');
 }
 .dark-mode-toggle {
     position: relative;
