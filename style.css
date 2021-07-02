@@ -3,10 +3,8 @@ body, html {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 
   transition: all 0.4s ease-in;
-  background-image: var(--bg-gradient);
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: var(--bg-gradient) no-repeat center center fixed;
+  -webkit-background-size: cover;
   background-size: cover;
 }
 :root {
@@ -43,6 +41,7 @@ body, html {
   flex-wrap: wrap;
   z-index: 1;
 }
+
   .container .title {
     position: relative;
     width: 1600px;
@@ -71,6 +70,26 @@ body, html {
       letter-spacing: 2px;
       line-height: 0.4em;
     }
+      @media only screen and (max-width: 1320px) {
+        .container .title .content {
+          padding: 15px;
+        }
+        .container .title {
+          height: 300px;
+        }
+        .container .title .content h1 {
+          font-size: 5.4em;
+        }
+        .content #p {
+          font-size: 1.4em;
+        }
+        .dark-mode-toggle {
+          font-size: 0.8em;
+          padding: 15px;
+          padding-left: 35px;
+          padding-right: 35px;
+        }
+      }
     .container .title .content p {
       position: relative;
       font-size: 2em;
