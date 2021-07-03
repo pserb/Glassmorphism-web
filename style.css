@@ -1,4 +1,10 @@
-body, html {
+:root {
+  --bg-gradient: url('gradient-min.png');
+}
+.darkmode {
+  --bg-gradient: url('gradient-dark-min.png');
+}
+body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 
@@ -6,12 +12,6 @@ body, html {
   background: var(--bg-gradient) no-repeat center center fixed;
   -webkit-background-size: cover;
   background-size: cover;
-}
-:root {
-  --bg-gradient: url('gradient-min.png');
-}
-.darkmode {
-  --bg-gradient: url('gradient-dark-min.png');
 }
 .dark-mode-toggle {
     position: relative;
