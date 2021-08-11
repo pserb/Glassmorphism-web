@@ -89,6 +89,25 @@ body {
           padding-left: 35px;
           padding-right: 35px;
         }
+
+        .container .body .body-content #img {
+          position: absolute;
+          width: 450px;
+          top: 0px;
+          right: 0px;
+        }
+
+        .container #body {
+          height: 300px;
+        }
+        .container .body .body-content #p {
+          font-size: 1.3em;
+          line-height: 30px;
+        }
+        .container .body .body-content #h2 {
+          top: -30px;
+          font-size: 4em;
+        }
       }
     .container .title .content p {
       position: relative;
